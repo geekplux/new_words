@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
+import Char from './components/char';
 
-const Char = props => <span>{props.c}</span>;
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ class App extends Component {
   }
   onNameInput = event => {
     this.setState({
-      wordName: event.target.value
+      wordName: event.target.value.trim()
     });
   };
   onDescInput = event => {
@@ -34,7 +34,9 @@ class App extends Component {
       <div className="App">
         <p className="title">新名词生成器</p>
         <div className="name">
-          {wordName}
+          {wordName &&
+            wordName.length &&
+            wordName.split('').map((c, i) => <Char key={i} c={c} />)}
         </div>
         {hideInput ? null : (
           <input
