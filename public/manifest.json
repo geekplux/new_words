@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "新名词",
+  "name": "新名词生成器",
   "icons": [
     {
       "src": "favicon.ico",
