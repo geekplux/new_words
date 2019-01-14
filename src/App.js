@@ -36,8 +36,8 @@ class App extends Component {
           <h1 className="title">新名词生成器</h1>
           <div className="nameChar">
             {wordName &&
-              wordName.length &&
-              wordName.split('').map((c, i) => <Char key={i} c={c} />)}
+              wordName.length ?
+              wordName.split('').map((c, i) => <Char key={i} c={c} />) : '*请在下方输入框输入'}
           </div>
           {hideInput ? null : (
             <input
