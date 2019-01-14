@@ -1,32 +1,70 @@
 .App {
+  padding: 50px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.container {
+  text-align: left;
+  font-size: 14px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+  margin: 0 0 100px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.nameInput,
+.descInput {
+  margin-top: 40px;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #777;
+  outline: none;
+  min-height: 50px;
+  width: 100%;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nameInput {
+  padding: 0 10px;
+}
+.descInput {
+  padding: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.desc {
+  margin-top: 30px;
+  font-family: '\4EFF\5B8B', '仿宋', '\4EFF\5B8B_GB2312', '仿宋_GB2312', '\534E\6587\4EFF\5B8B', '华文仿宋', 'FangSong', 'FangSong_GB2312', 'STFangsong', 'CWTEX-F', 'Noto Serif SC', serif;
+  display: block;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #2f54eb;
+  box-shadow: 0 0.04267rem 0 rgba(0,0,0,.045);
+  border: 0;
+  margin: 150px 0 0 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  line-height: 2.5;
+  font-size: 20px;
+  padding: 0;
+  color: #fff;
+  outline: 0;
+}
+
+.author {
+  margin-top: 50px;
+  text-align: center;
+}
+.author a {
+  margin-left: 5px;
 }

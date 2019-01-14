@@ -1,12 +1,12 @@
 .char {
   display: inline-block;
   font-family: '\6977\4F53', '楷体', '\6977\4F53_GB2312', '楷体_GB2312', '\534E\6587\6977\4F53', '华文楷体', '\6807\6977\4F53', 'KaiTi', 'KaiTi_GB2312', 'Kaiti SC', 'STKaiti', 'AR PL UKai CN', 'AR PL UKai HK', 'AR PL UKai TW', 'AR PL UKai TW MBE', 'AR PL KaitiM GB', 'DFKai-SB', 'TW-Kai', 'Noto Serif SC', serif;
-  width: 93px;
-  height: 93px;
-  font-size: 58px;
+  width: 80px;
+  height: 80px;
+  font-size: 60px;
   margin-right: -2px;
   text-align: center;
-  line-height: 85px;
+  line-height: 80px;
   background-size: cover;
   background-repeat: no-repeat;
   vertical-align: top;
