@@ -1,7 +1,16 @@
 {
   "name": "new_words",
   "version": "0.1.0",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/geekplux/new_words.git"
+  },
+  "author": "GeekPlux <geekplux@gmail.com> (http://geekplux.com/)",
+  "keywords": [
+    "new words",
+    "words"
+  ],
+  "license": "MIT",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
