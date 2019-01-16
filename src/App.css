@@ -31,7 +31,8 @@
   color: #777;
 }
 
-.nameInput:focus, .descInput:focus {
+.nameInput:focus,
+.descInput:focus {
   border-color: #40a9ff;
   color: #000;
 }
@@ -85,6 +86,13 @@
   cursor: pointer;
 }
 
+.download-btn {
+  background: #fff;
+  color: #f5222d;
+  border: 1px solid #f5222d;
+  margin-top: 20px;
+}
+
 .author {
   margin-top: 50px;
   text-align: center;
@@ -92,4 +100,10 @@
 
 .author a {
   margin-left: 5px;
+}
+
+.result {
+  background-color: #fff;
+  padding: 50px;
+  box-shadow: 0 0 15px 1px #aaa;
 }
