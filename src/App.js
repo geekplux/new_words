@@ -63,7 +63,7 @@ class App extends Component {
             />
           )}
           <button className="btn" onClick={this.onClick}>
-            {hideInput ? '修改' : '完成'}
+            {hideInput ? '修改' : '预览'}
           </button>
           <p className="author">
             © made by
