@@ -6,12 +6,18 @@
 .container {
   text-align: left;
   font-size: 14px;
-  max-width: 400px;
+  max-width: 450px;
   margin: 0 auto;
 }
 
 .title {
-  margin: 0 0 100px 0;
+  margin: 0 0 70px 0;
+  padding: 0 25px;
+}
+
+.word {
+  padding: 30px 25px 15px;
+  background-color: #fff;
 }
 
 .nameInput,
@@ -22,15 +28,17 @@
   border: 1px solid #777;
   outline: none;
   min-height: 50px;
-  width: 100%;
   display: block;
 }
 
 .nameInput {
+  width: 100%;
   padding: 0 10px;
 }
 
 .descInput {
+  width: 89%;
+  margin: 10px auto 30px;
   padding: 10px;
 }
 
@@ -58,12 +66,11 @@
 
 .btn {
   position: relative;
-  display: block;
-  width: 100%;
+  width: 89%;
   background-color: #2f54eb;
   box-shadow: 0 0.04267rem 0 rgba(0, 0, 0, .045);
   border: 0;
-  margin: 150px 0 0 0;
+  margin: 120px 5.5% 0;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
@@ -72,6 +79,11 @@
   padding: 0;
   color: #fff;
   outline: 0;
+  cursor: pointer;
+}
+
+.download-btn {
+  margin-top: 50px;
 }
 
 .author {
