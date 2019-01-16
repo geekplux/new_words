@@ -65,13 +65,20 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="container" style={{
-          maxWidth: MAX_WIDTH,
-        }}>
+        <div
+          className="container"
+          style={{
+            maxWidth: MAX_WIDTH
+          }}
+        >
           <h1 className="title">新名词生成器</h1>
-          <div id="result" className="result" style={{
-            padding: RESULT_PADDING,
-          }}>
+          <div
+            id="result"
+            className="result"
+            style={{
+              padding: RESULT_PADDING
+            }}
+          >
             <div className="nameChar" ref={this.setNameCharRef}>
               {wordName && wordName.length
                 ? wordName
@@ -106,6 +113,17 @@ class App extends Component {
                 onChange={this.onDescInput}
               />
             )}
+            <p className="cite">
+              使用{' '}
+              <a
+                href="https://new-words.now.sh"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                https://new-words.now.sh/
+              </a>{' '}
+              生成
+            </p>
           </div>
           <button className="btn preview-btn" onClick={this.onClick}>
             {hideInput ? '修改' : '预览'}
@@ -132,7 +150,13 @@ class App extends Component {
           </div>
           <p className="author">
             © made by
-            <a href="https://geekplux.com">GeekPlux</a>
+            <a
+              href="https://geekplux.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              GeekPlux
+            </a>
           </p>
         </div>
       </div>

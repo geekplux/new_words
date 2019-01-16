@@ -139,6 +139,17 @@
   box-shadow: 0 0 15px 1px #aaa;
 }
 
+.cite {
+  margin-top: 50px;
+  font-size: 10px;
+  color: #ccc;
+  font-style: italic;
+}
+
+.cite a {
+  color: #ccc;
+}
+
 @media screen and (max-width: 768px) {
   .App {
     padding: 20px;
