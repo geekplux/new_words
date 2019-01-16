@@ -14,6 +14,10 @@
   margin: 0 0 100px 0;
 }
 
+.nameChar {
+  display: flex;
+}
+
 .nameInput,
 .descInput {
   margin-top: 40px;
@@ -134,3 +138,10 @@
   padding: 50px;
   box-shadow: 0 0 15px 1px #aaa;
 }
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 20px;
+  }
+}
+

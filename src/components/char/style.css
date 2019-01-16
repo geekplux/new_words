@@ -1,13 +1,33 @@
+.square {
+  flex: 1;
+}
+
+.square .wrap {
+  position: relative;
+}
+.square .wrap:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.square .content {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .char {
-  display: inline-block;
-  font-family: '\6977\4F53', '楷体', '\6977\4F53_GB2312', '楷体_GB2312', '\534E\6587\6977\4F53', '华文楷体', '\6807\6977\4F53', 'KaiTi', 'KaiTi_GB2312', 'Kaiti SC', 'STKaiti', 'AR PL UKai CN', 'AR PL UKai HK', 'AR PL UKai TW', 'AR PL UKai TW MBE', 'AR PL KaitiM GB', 'DFKai-SB', 'TW-Kai', 'Noto Serif SC', serif;
-  width: 80px;
-  height: 80px;
-  font-size: 60px;
-  margin-right: -2px;
-  text-align: center;
-  line-height: 80px;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: '\6977\4F53', '楷体', '\6977\4F53_GB2312', '楷体_GB2312',
+    '\534E\6587\6977\4F53', '华文楷体', '\6807\6977\4F53', 'KaiTi',
+    'KaiTi_GB2312', 'Kaiti SC', 'STKaiti', 'AR PL UKai CN', 'AR PL UKai HK',
+    'AR PL UKai TW', 'AR PL UKai TW MBE', 'AR PL KaitiM GB', 'DFKai-SB',
+    'TW-Kai', 'Noto Serif SC', serif;
   background-size: cover;
   background-repeat: no-repeat;
-  vertical-align: top;
 }
