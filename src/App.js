@@ -4,6 +4,8 @@ import './App.css';
 import pinyinUtil from './pinyinUtil';
 import domtoimage from 'dom-to-image';
 
+const MAX_WIDTH = 400;
+const RESULT_PADDING = 50;
 const pinyin = str => pinyinUtil.getPinyin(str);
 function downloadImg(format) {
   const fn = {
@@ -32,6 +34,7 @@ class App extends Component {
       hideInput: false
     };
   }
+  setNameCharRef = ref => (this.nameCharRef = ref);
   onNameInput = event => {
     this.setState({
       wordName: event.target.value.trim()
@@ -47,22 +50,39 @@ class App extends Component {
     this.setState({ hideInput: !this.state.hideInput });
   };
 
-  onDownloadClick = (format) => event => {
+  onDownloadClick = format => event => {
     this.setState({ hideInput: true });
     downloadImg(format);
   };
 
   render() {
     const { hideInput, wordName, wordDesc } = this.state;
+    let nameCharWidth = MAX_WIDTH - 2 * RESULT_PADDING;
+    if (this.nameCharRef) {
+      const { width } = this.nameCharRef.getBoundingClientRect();
+      nameCharWidth = width;
+    }
 
     return (
       <div className="App">
-        <div className="container">
+        <div className="container" style={{
+          maxWidth: MAX_WIDTH,
+        }}>
           <h1 className="title">新名词生成器</h1>
-          <div id="result" className="result">
-            <div className="nameChar">
+          <div id="result" className="result" style={{
+            padding: RESULT_PADDING,
+          }}>
+            <div className="nameChar" ref={this.setNameCharRef}>
               {wordName && wordName.length
-                ? wordName.split('').map((c, i) => <Char key={i} c={c} />)
+                ? wordName
+                    .split('')
+                    .map((c, i) => (
+                      <Char
+                        key={i}
+                        c={c}
+                        fontSize={(nameCharWidth / wordName.length) * 0.8}
+                      />
+                    ))
                 : '*请在下方输入框输入'}
             </div>
             <div className="pinyin">{wordName && pinyin(wordName)}</div>
@@ -91,13 +111,22 @@ class App extends Component {
             {hideInput ? '修改' : '预览'}
           </button>
           <div className="btn-group">
-            <button className="btn download-btn" onClick={this.onDownloadClick('png')}>
+            <button
+              className="btn download-btn"
+              onClick={this.onDownloadClick('png')}
+            >
               PNG
             </button>
-            <button className="btn download-btn" onClick={this.onDownloadClick('svg')}>
+            <button
+              className="btn download-btn"
+              onClick={this.onDownloadClick('svg')}
+            >
               SVG
             </button>
-            <button className="btn download-btn" onClick={this.onDownloadClick('jpeg')}>
+            <button
+              className="btn download-btn"
+              onClick={this.onDownloadClick('jpeg')}
+            >
               JPEG
             </button>
           </div>
