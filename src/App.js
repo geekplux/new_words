@@ -47,9 +47,9 @@ class App extends Component {
     this.setState({ hideInput: !this.state.hideInput });
   };
 
-  onDownloadClick = event => {
-    this.setState({ hideInput: !this.state.hideInput });
-    downloadImg('png');
+  onDownloadClick = (format) => event => {
+    this.setState({ hideInput: true });
+    downloadImg(format);
   };
 
   render() {
@@ -87,13 +87,19 @@ class App extends Component {
               />
             )}
           </div>
-          <div className="btn-group">
-            <button className="btn preview-btn" onClick={this.onClick}>
-              {hideInput ? '修改' : '预览'}
-            </button>
-            <button className="btn download-btn" onClick={this.onDownloadClick}>
-              下载
+          <button className="btn preview-btn" onClick={this.onClick}>
+            {hideInput ? '修改' : '预览'}
           </button>
+          <div className="btn-group">
+            <button className="btn download-btn" onClick={this.onDownloadClick('png')}>
+              PNG
+            </button>
+            <button className="btn download-btn" onClick={this.onDownloadClick('svg')}>
+              SVG
+            </button>
+            <button className="btn download-btn" onClick={this.onDownloadClick('jpeg')}>
+              JPEG
+            </button>
           </div>
           <p className="author">
             © made by
