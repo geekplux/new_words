@@ -87,12 +87,14 @@ class App extends Component {
               />
             )}
           </div>
-          <button className="btn" onClick={this.onClick}>
-            {hideInput ? '修改' : '预览'}
+          <div className="btn-group">
+            <button className="btn preview-btn" onClick={this.onClick}>
+              {hideInput ? '修改' : '预览'}
+            </button>
+            <button className="btn download-btn" onClick={this.onDownloadClick}>
+              下载
           </button>
-          <button className="btn download-btn" onClick={this.onDownloadClick}>
-            下载
-          </button>
+          </div>
           <p className="author">
             © made by
             <a href="https://geekplux.com">GeekPlux</a>

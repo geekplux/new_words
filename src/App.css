@@ -67,14 +67,17 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.btn-group {
+  margin-top: 80px;
+}
+
 .btn {
+  width: 50%;
+  display: inline-block;
   position: relative;
-  display: block;
-  width: 100%;
   background-color: #2f54eb;
   box-shadow: 0 0.04267rem 0 rgba(0, 0, 0, .045);
   border: 0;
-  margin: 150px 0 0 0;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
@@ -84,13 +87,19 @@
   color: #fff;
   outline: 0;
   cursor: pointer;
+  transition: all .3s;
 }
-
+.btn:hover {
+  background-color: #1d39c4;
+}
+.preview-btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 1px solid #fff;
+}
 .download-btn {
-  background: #fff;
-  color: #f5222d;
-  border: 1px solid #f5222d;
-  margin-top: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .author {
