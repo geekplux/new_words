@@ -1,12 +1,16 @@
 # new_words
 
- [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](http://donate.geekplux.com)
+ [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](http://geekplux.com/donate)
 
 > To generate a new word.
 
 ## Online
 
 - [https://new-words.now.sh/](https://new-words.now.sh/)
+
+## Preview
+
+![](preview/new-words.now.sh_(iPad).png)
 
 ## Thanks
 
