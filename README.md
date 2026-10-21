@@ -1,32 +1,42 @@
-# new_words
+# 新名词生成器 · New Words
 
- [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](http://geekplux.com/donate)
+给你造的新词配一张「词典卡片」：输入词语和释义，自动标注拼音，每个字放进米字格，一键导出图片。
 
-> To generate a new word.
+Coin a Chinese word, write its definition, and get a dictionary-style card with pinyin and 米字格 character boxes, ready to download.
 
-## Online
+**在线使用 · Try it:** [newwords.vercel.app](https://newwords.vercel.app/)
 
-- [https://new-words.now.sh/](https://new-words.now.sh/)
+![新名词生成器预览](preview/new-words.now.sh_(iPad).png)
 
-## Preview
+## 功能 · Features
 
-![](preview/new-words.now.sh_(iPad).png)
+- 最多 10 个字，字号随字数自动缩放
+- 拼音自动生成（基于 [pinyinjs](https://github.com/sxei/pinyinjs)）
+- 「预览」隐藏输入框，「修改」继续编辑
+- 导出 PNG、SVG 或 JPEG
 
-## Thanks
+## 本地运行 · Run locally
+
+```bash
+yarn
+yarn start   # 开发
+yarn build   # 打包
+```
+
+基于 Create React App（React 16）。
+
+## 致谢 · Thanks
 
 - [pinyinjs](https://github.com/sxei/pinyinjs)
+- [dom-to-image](https://github.com/tsayen/dom-to-image)
 
-## Contributing
+## More from GeekPlux
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+我是 GeekPlux（Sean），做数据可视化的前端工程师，2011 年起在 [geekplux.com](https://geekplux.com) 写作，大多是中文。
 
-## Author
+- [geekplux.com](https://geekplux.com)：文章与近况
+- [Projects](https://geekplux.com/projects)：其他作品，比如用 Markdown 画图表的 [markvis](https://github.com/geekplux/markvis)
 
-**new_words** © [geekplux](https://github.com/geekplux), Released under the [MIT](./LICENSE) License.<br>
-Authored and maintained by geekplux with help from contributors ([list](https://github.com/geekplux/new_words/contributors)).
+## License
 
-> [github.com/geekplux](https://github.com/geekplux) · GitHub [@geekplux](https://github.com/geekplux) · Twitter [@geekplux](https://twitter.com/geekplux)
+MIT © [GeekPlux](https://geekplux.com)

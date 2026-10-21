@@ -116,11 +116,11 @@ class App extends Component {
             <p className="cite">
               使用{' '}
               <a
-                href="https://new-words.now.sh"
+                href="https://newwords.vercel.app"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                https://new-words.now.sh/
+                https://newwords.vercel.app/
               </a>{' '}
               生成
             </p>
